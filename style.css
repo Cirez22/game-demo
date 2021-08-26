@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+}
+ 
+ #c{
+position: relative;
+} 
+
+
+#canva {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  /* background-color:black; */
+  /* border: 2px solid yellow; */
+
+
+  }
+
+  h1{
+    position: absolute;
+    /* color: white; */
+    top: 1px;
+    left: 630px;
+    z-index: 1;
+    font-family: 'Road Rage';
+    font-size: 60px;
+    letter-spacing: 10px;
+
+        -webkit-animation-direction: normal;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: colours;
+    -webkit-animation-timing-function: ease;
+
+    
+
+    
+  }
+  @-webkit-keyframes colours {
+    0% {color:#ffd319;}
+   15% {color:#ff901f;}
+   30% {color:#ff2975;}
+   45% {color:#f222ff;}
+   60% {color: #944893;}
+   75% {color: #860029;}
+   90% {color: #bdb280;}
+  100% {color: #39f;}
+}
+
