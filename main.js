@@ -39,7 +39,7 @@ var player = (function () {
     playerImg = img;
   })
   
-  img.src = 'cargif2.gif'
+  img.src = './cargif2.gif'
 
   return {
     // loadImage: function () {
