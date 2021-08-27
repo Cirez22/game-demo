@@ -12,7 +12,7 @@ var w = c.width = window.innerWidth,
     minDist = 10,
     maxDist = 30,
     initialWidth = 10,
-    maxLines = 1000, //cambiar a 5000
+    maxLines = 800, //cambiar a 5000
     initialLines = 10,
     speed = 5,
     

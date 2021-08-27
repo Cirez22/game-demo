@@ -160,7 +160,7 @@ var blocks = (function () {
 
     draw: function (b) {
       if (player.isDead()) car.fillStyle = "#ffd319";
-      else car.fillStyle = "#f222ff";
+      else car.fillStyle = "white";
       car.fillRect(b.x, b.y, b.w, b.h);
     },
 
@@ -168,7 +168,7 @@ var blocks = (function () {
     drawZone: function () { // Zona de barras cayendo
       
       if (player.isDead()) car.fillStyle = "transparent";
-      else car.fillStyle = "#321450";
+      else car.fillStyle = "transparent";
       // car.fillStyle = "#ffd319";
       car.fillRect(start.x1, 0, start.x2 - start.x1 + 300, canvas.height); //zona amarilla agrandada
 
