@@ -369,7 +369,7 @@ var fpsFilter = 50;
 
 
 
-var animation_fps = 60;
+var animation_fps = 30;
 
 setInterval(function () {
   update();
