@@ -347,6 +347,7 @@ function draw() {
   }
   else {
     car.fillStyle = "	white";
+    car.font.src = ('./images/Road_Rage.otf');
     car.font = "18px Road Rage";
     car.fillText("Cross to the other side", 10, 20);
     car.fillText("---------------------->", 10, 40);

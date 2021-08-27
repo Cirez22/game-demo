@@ -23,7 +23,9 @@ position: relative;
     top: 1px;
     left: 630px;
     z-index: 1;
-    font-family: 'Road Rage';
+    /* font-family: 'Road Rage'; */
+    font-family: Road Rage;
+    src: ('./images/Road_Rage.otf');
     font-size: 80px;
     letter-spacing: 10px;
 
