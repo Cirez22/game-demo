@@ -48,3 +48,7 @@ position: relative;
   100% {color: #39f;}
 }
 
+audio {
+  position:absolute; z-index:2; left:600px; top:35em;  z-index: 1;
+  opacity: 15%;
+}

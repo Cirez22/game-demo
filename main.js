@@ -164,6 +164,7 @@ var blocks = (function () {
       car.fillRect(b.x, b.y, b.w, b.h);
     },
 
+    
     drawZone: function () { // Zona de barras cayendo
       
       if (player.isDead()) car.fillStyle = "transparent";
@@ -345,8 +346,8 @@ function draw() {
     car.fillText("Press [SPACE]", 280, 350);
   }
   else {
-    car.fillStyle = "	#ff2975";
-    car.font = "14px Road Rage";
+    car.fillStyle = "	white";
+    car.font = "18px Road Rage";
     car.fillText("Cross to the other side", 10, 20);
     car.fillText("---------------------->", 10, 40);
 
