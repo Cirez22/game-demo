@@ -24,7 +24,7 @@ position: relative;
     left: 630px;
     z-index: 1;
     font-family: 'Road Rage';
-    font-size: 60px;
+    font-size: 80px;
     letter-spacing: 10px;
 
         -webkit-animation-direction: normal;
@@ -41,9 +41,9 @@ position: relative;
     0% {color:#ffd319;}
    15% {color:#ff901f;}
    30% {color:#ff2975;}
-   45% {color:#f222ff;}
+   45% {color:greenyellow;}
    60% {color: #944893;}
-   75% {color: #860029;}
+   75% {color: white;}
    90% {color: #bdb280;}
   100% {color: #39f;}
 }

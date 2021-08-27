@@ -8,9 +8,6 @@ canvas.width = 1200;
 
 
 document.body.appendChild(canvas);
-// set image on init
-// image = new Image();
-// image.src('https://e7.pngegg.com/pngimages/654/759/png-clipart-back-to-the-future-car-illustration-car-delorean-dmc-12-dr-emmett-brown-delorean-time-machine-back-to-the-future-cartoon-car-logo-cartoon-thumbnail.png')
 
 function rand(min, max, interval) {
   if (interval === undefined) interval = 1;
@@ -28,7 +25,7 @@ var player = (function () {
   var x = 100,
   y = canvas.height / 2,
   w = 50,
-  h = 50,
+  h = 20,
   dead = false,
   death = 0,
   playerImg;
@@ -91,8 +88,9 @@ var player = (function () {
 
     draw: function () {
       car.fillStyle = "#50BEFA";
+      car.fillStyle = 'rgba(0,0,0,0)';
       // car.fillRect(x, y, w, h); // Uncomment for square pl;ayer
-      car.drawImage(playerImg, x,y,w*2, h*2);
+      car.drawImage(playerImg, (x - 28),(y - 30 ),w*2, h*4);
     },
 
     moveTo: function (a, b) {
@@ -127,7 +125,7 @@ var blocks = (function () {
 
 
   function Block(direction) {
-    this.w = 5;
+    this.w = 10;
     this.h = rand(start.h_min, start.h_max);
     this.x = rand(start.x1, start.x2, 10);
     this.y = 0;
@@ -156,10 +154,6 @@ var blocks = (function () {
 
       // LEVELSSSS 
 
-      
-
-
-
 
       this.createXBlocks(n);
     },
@@ -173,7 +167,7 @@ var blocks = (function () {
     drawZone: function () { // Zona de barras cayendo
       
       if (player.isDead()) car.fillStyle = "transparent";
-      else car.fillStyle = "#ffd319";
+      else car.fillStyle = "#321450";
       // car.fillStyle = "#ffd319";
       car.fillRect(start.x1, 0, start.x2 - start.x1 + 300, canvas.height); //zona amarilla agrandada
 
@@ -209,7 +203,7 @@ var blocks = (function () {
       for (i = 0; i < len; ++i) {
         if (blocks[i].direction === 'up') {
           blocks[i].y -= blocks[i].speed;
-          if ((blocks[i].y + blocks[i].h) < 0) {
+          if ((blocks[i].y + blocks[i].h) < 5) {
             blocks[i].y = canvas.height + rand(10, 350);
           }
         }

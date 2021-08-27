@@ -12,7 +12,7 @@ var w = c.width = window.innerWidth,
     minDist = 10,
     maxDist = 30,
     initialWidth = 10,
-    maxLines = 100, //cambiar a 5000
+    maxLines = 1000, //cambiar a 5000
     initialLines = 10,
     speed = 5,
     
@@ -174,14 +174,4 @@ window.addEventListener( 'resize', function() {
 
 
 
-// var source = "audio.mp3"
-//  var audio = document.createElement("audio");
-//  //
-//  audio.autoplay = true;
-//  //
-//  audio.load()
-//  audio.addEventListener("load", function() { 
-//      audio.play(); 
-//  }, true);
-//  audio.src = source; 
 
